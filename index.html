@@ -253,11 +253,12 @@
       fill: currentColor;
     }
 
+    /* Modal para Código QR ampliado */
     .modal-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(14, 58, 83, 0.7);
-      backdrop-filter: blur(4px);
+      background: rgba(14, 58, 83, 0.75);
+      backdrop-filter: blur(5px);
       display: none;
       align-items: center;
       justify-content: center;
@@ -271,47 +272,54 @@
 
     .modal-card {
       background: var(--blanco);
-      padding: 26px 20px;
-      border-radius: 20px;
+      padding: 30px 24px;
+      border-radius: 24px;
       text-align: center;
-      max-width: 320px;
-      width: 100%;
+      max-width: 360px;
+      width: 92%;
       border: 2px solid var(--oro-itzamna);
+      box-shadow: 0 20px 45px rgba(0,0,0,0.3);
     }
 
     .modal-card h3 {
       font-family: 'Playfair Display', serif;
       color: var(--azul-meridiano);
-      font-size: 1.25rem;
-      margin-bottom: 4px;
+      font-size: 1.35rem;
+      margin-bottom: 6px;
     }
 
     .modal-card p {
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       color: #555;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     #qrcode {
       display: flex;
       justify-content: center;
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
 
     #qrcode img {
-      border: 4px solid var(--arena-perla);
-      border-radius: 10px;
+      border: 6px solid var(--arena-perla);
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(14, 58, 83, 0.08);
     }
 
     .modal-close {
       background: var(--azul-meridiano);
       color: #FFFFFF;
       border: none;
-      padding: 10px 22px;
-      border-radius: 10px;
-      font-size: 0.85rem;
+      padding: 12px 28px;
+      border-radius: 12px;
+      font-size: 0.9rem;
       font-weight: 600;
       cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .modal-close:hover {
+      background: var(--zafiro-zazil);
     }
 
     footer {
@@ -469,8 +477,8 @@
       if (!qrGenerated) {
         new QRCode(document.getElementById("qrcode"), {
           text: window.location.href,
-          width: 170,
-          height: 170,
+          width: 230,
+          height: 230,
           colorDark: "#0E3A53",
           colorLight: "#FFFFFF",
           correctLevel: QRCode.CorrectLevel.H
