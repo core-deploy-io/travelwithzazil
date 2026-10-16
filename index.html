@@ -5,15 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brenda Zazil Morales Roldán | Travel with Zazil</title>
   
+  <!-- Icono para pantalla de inicio en iPhone y Android -->
+  <link rel="apple-touch-icon" href="logo.jpg">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+
+  <!-- Meta tags para compartir por WhatsApp / Redes Sociales -->
   <meta property="og:title" content="Brenda Zazil Morales Roldán - Travel with Zazil">
-  <meta property="og:description" content="Directora & Especialista en Viajes. Experiencias a la medida.">
+  <meta property="og:description" content="Directora & Especialista en Viajes. Experiencias y viajes a la medida.">
   <meta property="og:image" content="logo.jpg">
   <meta property="og:type" content="profile">
 
+  <!-- Tipografías Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
   
+  <!-- Librería ligera para Código QR -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
   <style>
@@ -75,7 +82,7 @@
       position: relative;
       background: #FFFFFF;
       border-radius: 50%;
-      padding: 8px;
+      padding: 10px;
       box-shadow: 0 8px 24px rgba(14, 58, 83, 0.16);
       border: 2px solid var(--oro-itzamna);
       display: flex;
@@ -343,7 +350,7 @@
     </div>
 
     <div class="links-container">
-      <!-- WhatsApp -->
+      <!-- WhatsApp Directo -->
       <a href="https://wa.me/525591114850?text=Hola%20Brenda,%20me%20gustar%C3%ADa%20cotizar%20un%20viaje%20con%20Travel%20with%20Zazil" target="_blank" class="action-btn">
         <div class="btn-left">
           <div class="icon-box" style="background:#25D366;">
@@ -354,7 +361,7 @@
         <span class="btn-arrow">&#10095;</span>
       </a>
 
-      <!-- Teléfono -->
+      <!-- Llamada Telefónica -->
       <a href="tel:+525591114850" class="action-btn">
         <div class="btn-left">
           <div class="icon-box">
@@ -365,7 +372,7 @@
         <span class="btn-arrow">&#10095;</span>
       </a>
 
-      <!-- Correo -->
+      <!-- Correo Electrónico -->
       <a href="mailto:travelwithzazil@gmail.com" class="action-btn">
         <div class="btn-left">
           <div class="icon-box">
@@ -416,6 +423,7 @@
     </footer>
   </div>
 
+  <!-- Modal para Código QR -->
   <div class="modal-overlay" id="qrModal" onclick="closeQRModal(event)">
     <div class="modal-card" onclick="event.stopPropagation()">
       <h3>Escanea la tarjeta</h3>
